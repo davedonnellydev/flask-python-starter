@@ -67,6 +67,9 @@ The application will be available at `http://localhost:8000`
 
 ### Running Tests
 
+![CI](https://github.com/davedonnellydev/flask-python-starter/actions/workflows/ci.yml/badge.svg)  
+*Link should be amended so that correct repo is specified*  
+
 ```bash
 # Run all tests
 pytest
@@ -77,6 +80,7 @@ pytest --cov=app
 # Run tests and generate HTML coverage report
 pytest --cov=app --cov-report=html
 ```
+
 
 ### Code Quality
 
