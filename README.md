@@ -52,10 +52,16 @@ cp .env.example .env
 
 5. Run the application:
 ```bash
-python app/main.py
+# Option 1: Using Flask CLI (recommended)
+FLASK_APP=app.main python -m flask run --host=0.0.0.0 --port=8000
+
+# Option 2: Using Python module (alternative)
+python -m app.main
 ```
 
-The application will be available at `http://localhost:5000`
+The application will be available at `http://localhost:8000`
+
+**Note**: On macOS, port 5000 is often used by AirPlay Receiver. If you encounter "Address already in use" errors, use port 8000 or another available port.
 
 ## Development
 
