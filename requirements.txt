@@ -2,5 +2,7 @@ flask
 python-dotenv
 requests
 pytest
+pytest-cov
 flake8
 black
+flask-talisman
