@@ -70,8 +70,8 @@ The application will be available at `http://localhost:8000`
 
 ### Running Tests
 
-<!-- CI badge will be available once the workflow is in the correct repository -->
-<!-- ![CI](https://github.com/your-username/your-repo-name/actions/workflows/ci.yml/badge.svg) -->
+![CI](https://github.com/davedonnellydev/flask-python-starter/actions/workflows/ci.yml/badge.svg)  
+*Link should be amended so that correct repo is specified*  
 
 ```bash
 # Run all tests (with coverage by default)
