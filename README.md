@@ -1,6 +1,6 @@
 # Project [00]: [Project name]
 
-**Starter**: Project based off the [Flask Python Starter](https://github.com/davedonnellydev/flask-python-starter)  
+**Starter**: Project based off the [Flask Python Starter](https://github.com/davedonnellydev/flask-python-starter)
 **Date**: [Project build date here]
 
 This project has been built as part of my AI Project-a-Day Challenge. You can read more information on the full project here: [https://github.com/davedonnellydev/ai-august-2025-challenge](https://github.com/davedonnellydev/ai-august-2025-challenge).
@@ -68,7 +68,7 @@ The application will be available at `http://localhost:8000`
 ### Running Tests
 
 ```bash
-# Run all tests
+# Run all tests (with coverage by default)
 pytest
 
 # Run tests with coverage
@@ -76,7 +76,12 @@ pytest --cov=app
 
 # Run tests and generate HTML coverage report
 pytest --cov=app --cov-report=html
+
+# Run tests without coverage
+pytest --no-cov
 ```
+
+**Note**: The pytest configuration in `pyproject.toml` automatically includes coverage reporting and sets the Python path to find the `app` module.
 
 ### Code Quality
 
