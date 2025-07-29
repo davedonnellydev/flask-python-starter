@@ -56,10 +56,10 @@ cp .env.example .env
 
 ```bash
 # Option 1: Using Flask CLI (recommended)
-FLASK_APP=app.main python -m flask run --host=0.0.0.0 --port=8000
+FLASK_APP=run.py python -m flask run --host=0.0.0.0 --port=8000
 
-# Option 2: Using Python module (alternative)
-python -m app.main
+# Option 2: Using Python directly (alternative)
+python run.py
 ```
 
 The application will be available at `http://localhost:8000`
@@ -70,8 +70,8 @@ The application will be available at `http://localhost:8000`
 
 ### Running Tests
 
-![CI](https://github.com/davedonnellydev/flask-python-starter/actions/workflows/ci.yml/badge.svg)
-_Link should be amended so that correct repo is specified_
+<!-- CI badge will be available once the workflow is in the correct repository -->
+<!-- ![CI](https://github.com/your-username/your-repo-name/actions/workflows/ci.yml/badge.svg) -->
 
 ```bash
 # Run all tests (with coverage by default)
