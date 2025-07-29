@@ -5,18 +5,16 @@
 
 This project has been built as part of my AI Project-a-Day Challenge. You can read more information on the full project here: [https://github.com/davedonnellydev/ai-august-2025-challenge](https://github.com/davedonnellydev/ai-august-2025-challenge).
 
-**Project Objective**: *Write up any project objectives here*
+**Project Objective**: _Write up any project objectives here_
 
 ## 🚀 Features
 
 - List project features here
 
-
 ## 🖥️ Demo
 
 **[Live Demo](https://your-demo-url.com)**
-*(Link will be added after deployment)*
-
+_(Link will be added after deployment)_
 
 ## Quick Start
 
@@ -28,29 +26,34 @@ This project has been built as part of my AI Project-a-Day Challenge. You can re
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd flask-python-starter
 ```
 
 2. Create a virtual environment:
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 4. Set up environment variables:
+
 ```bash
 cp .env.example .env
 # Edit .env with your configuration
 ```
 
 5. Run the application:
+
 ```bash
 # Option 1: Using Flask CLI (recommended)
 FLASK_APP=app.main python -m flask run --host=0.0.0.0 --port=8000
@@ -66,6 +69,9 @@ The application will be available at `http://localhost:8000`
 ## Development
 
 ### Running Tests
+
+![CI](https://github.com/davedonnellydev/flask-python-starter/actions/workflows/ci.yml/badge.svg)
+_Link should be amended so that correct repo is specified_
 
 ```bash
 # Run all tests (with coverage by default)
@@ -126,6 +132,7 @@ The application uses environment-based configuration:
 ### Production
 
 1. Set environment variables:
+
 ```bash
 export FLASK_ENV=production
 export SECRET_KEY=your-secure-secret-key
@@ -133,6 +140,7 @@ export LOG_LEVEL=WARNING
 ```
 
 2. Run with a production WSGI server:
+
 ```bash
 pip install gunicorn
 gunicorn -w 4 -b 0.0.0.0:8000 app.main:app
