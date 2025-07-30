@@ -15,6 +15,7 @@ venv.bak/
 # Environment variables and secrets
 .env
 .env.*
+!.env.example
 
 # Flask instance folder (if used)
 instance/
