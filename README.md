@@ -1,133 +1,96 @@
-# Project [00]: [Project name]
+# Project [00] #AIAppAugust: [Project name]
 
-**Starter**: Project based off the [Flask Python Starter](https://github.com/davedonnellydev/flask-python-starter)
-**Date**: [Project build date here]
+![Last Commit](https://img.shields.io/github/last-commit/davedonnellydev/flask-python-starter)  
 
-This project has been built as part of my AI Project-a-Day Challenge. You can read more information on the full project here: [https://github.com/davedonnellydev/ai-august-2025-challenge](https://github.com/davedonnellydev/ai-august-2025-challenge).
+**📆 Date**: *[Project build date here]*  
+**🎯 Project Objective**: *[Write up any project objectives here]*  
+**🚀 Features**: *[Main features for MVP]*  
+**🛠️ Tech used**: *[Main tech used, including links to libraries/APIs]*  
+**▶️ Live Demo**: *[https://your-demo-url.com](https://your-demo-url.com)*  
+*(Link will be added after deployment)*  
 
-**Project Objective**: _Write up any project objectives here_
+**🏁 Starter repo**: [Flask Python starter](https://github.com/davedonnellydev/flask-python-starter)  
 
-## 🚀 Features
+## 🗒️ Summary
+**Lessons learned**  
+*A little summary of learnings*  
 
-- List project features here
+**Blockers**  
+*Note any blockers here*  
 
-## 🖥️ Demo
+**Final thoughts**  
+*Any final thoughts here*  
 
-**[Live Demo](https://your-demo-url.com)**
-_(Link will be added after deployment)_
+
+This project has been built as part of my AI App August Challenge. You can read more information on the full project here: [https://github.com/davedonnellydev/ai-august-2025-challenge](https://github.com/davedonnellydev/ai-august-2025-challenge).  
+
+## 🧪 Testing
+
+![CI](https://github.com/davedonnellydev/flask-python-starter/actions/workflows/ci.yml/badge.svg) *[Link should be amended so that correct repo is specified]*  
+*Note: Test suite runs automatically with each push/merge.*  
 
 ## Quick Start
 
-### Prerequisites
+1. **Clone and install:**  
+   ```bash
+   git clone https://github.com/davedonnellydev/flask-python-starter.git
+   cd flask-python-starter
+   npm install
+   ```
 
-- Python 3.11+
-- pip
+2. **Create a virtual environment:**  
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-### Installation
+3. **Install dependencies:**  
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-1. Clone the repository:
+4. **Set up environment variables:**  
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
 
-```bash
-git clone <repository-url>
-cd flask-python-starter
-```
+5. **Run the application:**  
+   ```bash
+   # Option 1: Using Flask CLI (recommended)
+   FLASK_APP=run.py python -m flask run --host=0.0.0.0 --port=8000
 
-2. Create a virtual environment:
+   # Option 2: Using Python directly (alternative)
+   python run.py
+   ```
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+The application will be available at `http://localhost:8000`  
+**Note**: On macOS, port 5000 is often used by AirPlay Receiver. If you encounter "Address already in use" errors, use port 8000 or another available port.  
 
-3. Install dependencies:
 
-```bash
-pip install -r requirements.txt
-```
+## 🔧 Configuration
 
-4. Set up environment variables:
+The application uses environment-based configuration:  
 
-```bash
-cp .env.example .env
-# Edit .env with your configuration
-```
+- `SECRET_KEY` - Flask secret key (required)  
+- `FLASK_ENV` - Environment (development/testing/production)  
+- `LOG_LEVEL` - Logging level (DEBUG/INFO/WARNING/ERROR)  
 
-5. Run the application:
+### API Endpoints
+#### Health Checks
 
-```bash
-# Option 1: Using Flask CLI (recommended)
-FLASK_APP=run.py python -m flask run --host=0.0.0.0 --port=8000
+- `GET /health` - Basic health check  
+- `GET /health/detailed` - Detailed health check with version info  
 
-# Option 2: Using Python directly (alternative)
-python run.py
-```
+#### Proxy
 
-The application will be available at `http://localhost:8000`
+- `POST /api/proxy` - Proxy endpoint for external API calls  
 
-**Note**: On macOS, port 5000 is often used by AirPlay Receiver. If you encounter "Address already in use" errors, use port 8000 or another available port.
+#### Root
 
-## Development
+- `GET /` - Welcome message  
 
-### Running Tests
-
-![CI](https://github.com/davedonnellydev/flask-python-starter/actions/workflows/ci.yml/badge.svg)  
-*Link should be amended so that correct repo is specified*  
-
-```bash
-# Run all tests (with coverage by default)
-pytest
-
-# Run tests with coverage
-pytest --cov=app
-
-# Run tests and generate HTML coverage report
-pytest --cov=app --cov-report=html
-
-# Run tests without coverage
-pytest --no-cov
-```
-
-**Note**: The pytest configuration in `pyproject.toml` automatically includes coverage reporting and sets the Python path to find the `app` module.
-
-### Code Quality
-
-```bash
-# Format code
-black .
-
-# Check code style
-flake8
-
-# Run all quality checks
-black --check .
-flake8
-pytest
-```
-
-## API Endpoints
-
-### Health Checks
-
-- `GET /health` - Basic health check
-- `GET /health/detailed` - Detailed health check with version info
-
-### Proxy
-
-- `POST /api/proxy` - Proxy endpoint for external API calls
-
-### Root
-
-- `GET /` - Welcome message
-
-## Configuration
-
-The application uses environment-based configuration:
-
-- `SECRET_KEY` - Flask secret key (required)
-- `FLASK_ENV` - Environment (development/testing/production)
-- `LOG_LEVEL` - Logging level (DEBUG/INFO/WARNING/ERROR)
-
-## Deployment
+## 🎉 Deployment
 
 ### Production
 
@@ -156,14 +119,43 @@ docker build -t flask-starter .
 docker run -p 8000:8000 flask-starter
 ```
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and quality checks
-5. Submit a pull request
+## 📦 Available Scripts
 
-## License
+### Test scripts
 
-This project is licensed under the MIT License.
+```bash
+# Run all tests (with coverage by default)
+pytest
+
+# Run tests with coverage
+pytest --cov=app
+
+# Run tests and generate HTML coverage report
+pytest --cov=app --cov-report=html
+
+# Run tests without coverage
+pytest --no-cov
+```
+**Note**: The pytest configuration in `pyproject.toml` automatically includes coverage reporting and sets the Python path to find the `app` module.
+
+### Code Quality
+
+```bash
+# Format code
+black .
+
+# Check code style
+flake8
+
+# Run all quality checks
+black --check .
+flake8
+pytest
+```
+
+
+
+## 📜 License
+![GitHub License](https://img.shields.io/github/license/davedonnellydev/flask-python-starter)  
+This project is licensed under the MIT License.  
